@@ -1,0 +1,510 @@
+<!DOCTYPE html><html lang="en" class="scroll-smooth"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="canonical" href="https://www.vincirufus.com/posts/agi-is-engineering-problem/"><meta name="generator" content="Astro v4.16.18"><!-- General Meta Tags --><title>AGI is an Engineering Problem | Vinci Rufus</title><meta name="title" content="AGI is an Engineering Problem | Vinci Rufus"><meta name="description" content="LLM models are plateauing, but true AGI isn't about scaling the next breakthrough model—it's about engineering the right context, memory, and workflow systems. AGI is fundamentally a systems engineering problem, not a model training problem."><meta name="author" content="Vinci Rufus"><link rel="sitemap" href="/sitemap-index.xml"><!-- Open Graph / Facebook --><meta property="og:title" content="AGI is an Engineering Problem | Vinci Rufus"><meta property="og:description" content="LLM models are plateauing, but true AGI isn't about scaling the next breakthrough model—it's about engineering the right context, memory, and workflow systems. AGI is fundamentally a systems engineering problem, not a model training problem."><meta property="og:url" content="https://www.vincirufus.com/posts/agi-is-engineering-problem/"><meta property="og:image" content="https://www.vincirufus.com/posts/agi-is-an-engineering-problem.png"><!-- Article Published/Modified time --><meta property="article:published_time" content="2025-08-13T10:00:00.000Z"><meta property="article:modified_time" content="2025-08-13T10:00:00.000Z"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://www.vincirufus.com/posts/agi-is-engineering-problem/"><meta property="twitter:title" content="AGI is an Engineering Problem | Vinci Rufus"><meta property="twitter:description" content="LLM models are plateauing, but true AGI isn't about scaling the next breakthrough model—it's about engineering the right context, memory, and workflow systems. AGI is fundamentally a systems engineering problem, not a model training problem."><meta property="twitter:image" content="https://www.vincirufus.com/posts/agi-is-an-engineering-problem.png"><!-- Google JSON-LD Structured data --><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"AGI is an Engineering Problem | Vinci Rufus","image":"https://www.vincirufus.com/posts/agi-is-an-engineering-problem.png","datePublished":"2025-08-13T10:00:00.000Z","dateModified":"2025-08-13T10:00:00.000Z","author":[{"@type":"Person","name":"Vinci Rufus","url":"https://www.vincirufus.com/"}]}</script><!-- Google Font --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="preload" as="style" onload="this.onload=null; this.rel='stylesheet';" crossorigin><meta name="theme-color" content=""><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script src="/toggle-theme.js" async></script><script>
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    </script><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-NYKYFP8Q0G"></script><link rel="stylesheet" href="/_astro/about.DgqhUM5u.css">
+<style>a:where(.astro-blwjyjpt){position:relative;text-decoration-line:underline;text-decoration-style:dashed}a:where(.astro-blwjyjpt):hover{top:-.125rem;--tw-text-opacity: 1;color:rgba(var(--color-accent),var(--tw-text-opacity, 1))}a:where(.astro-blwjyjpt):focus-visible{padding:.25rem}a:where(.astro-blwjyjpt) svg:where(.astro-blwjyjpt){margin-right:-1.25rem;height:1.5rem;width:1.5rem;--tw-scale-x: .95;--tw-scale-y: .95;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));--tw-text-opacity: 1;color:rgba(var(--color-text-base),var(--tw-text-opacity, 1));opacity:.8}.group:where(.astro-blwjyjpt):hover a:where(.astro-blwjyjpt) svg:where(.astro-blwjyjpt){fill:rgb(var(--color-accent))}
+@keyframes astroFadeInOut{0%{opacity:1}to{opacity:0}}@keyframes astroFadeIn{0%{opacity:0;mix-blend-mode:plus-lighter}to{opacity:1;mix-blend-mode:plus-lighter}}@keyframes astroFadeOut{0%{opacity:1;mix-blend-mode:plus-lighter}to{opacity:0;mix-blend-mode:plus-lighter}}@keyframes astroSlideFromRight{0%{transform:translate(100%)}}@keyframes astroSlideFromLeft{0%{transform:translate(-100%)}}@keyframes astroSlideToRight{to{transform:translate(100%)}}@keyframes astroSlideToLeft{to{transform:translate(-100%)}}@media (prefers-reduced-motion){::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}[data-astro-transition-scope]{animation:none!important}}
+.social-icons:where(.astro-wkojbtzc){display:flex;flex-direction:column;flex-wrap:wrap;align-items:center;justify-content:center;gap:.25rem}@media (min-width: 640px){.social-icons:where(.astro-wkojbtzc){align-items:flex-start}}.link-button:where(.astro-wkojbtzc){--tw-scale-x: .9;--tw-scale-y: .9;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));padding:.5rem}.link-button:where(.astro-wkojbtzc):hover{--tw-rotate: 6deg;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@media (min-width: 640px){.link-button:where(.astro-wkojbtzc){padding:.25rem}}main:where(.astro-vj4tpspi){margin-left:auto;margin-right:auto;width:100%;max-width:48rem;padding-left:1rem;padding-right:1rem;padding-bottom:3rem}.post-title:where(.astro-vj4tpspi){font-size:1.875rem;line-height:2.25rem;font-weight:600;--tw-text-opacity: 1;color:rgba(var(--color-accent),var(--tw-text-opacity, 1))}
+</style><script type="module" src="/_astro/hoisted.B8ZoE9Kz.js"></script><style>[data-astro-transition-scope="astro-plk3gbjq-1"] { view-transition-name: agi-is-an-engineering-problem; }@layer astro { ::view-transition-old(agi-is-an-engineering-problem) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(agi-is-an-engineering-problem) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(agi-is-an-engineering-problem) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(agi-is-an-engineering-problem) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-plk3gbjq-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-plk3gbjq-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-plk3gbjq-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-plk3gbjq-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-plk3gbjq-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-plk3gbjq-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-plk3gbjq-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-plk3gbjq-1"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-36ssibgs-2"] { view-transition-name: agi; }@layer astro { ::view-transition-old(agi) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(agi) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(agi) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(agi) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-36ssibgs-2"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-36ssibgs-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-36ssibgs-2"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-36ssibgs-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-36ssibgs-2"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-36ssibgs-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-36ssibgs-2"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-36ssibgs-2"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-36ssibgs-3"] { view-transition-name: ai-engineering; }@layer astro { ::view-transition-old(ai-engineering) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(ai-engineering) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(ai-engineering) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(ai-engineering) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-36ssibgs-3"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-36ssibgs-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-36ssibgs-3"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-36ssibgs-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-36ssibgs-3"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-36ssibgs-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-36ssibgs-3"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-36ssibgs-3"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-36ssibgs-4"] { view-transition-name: system-design; }@layer astro { ::view-transition-old(system-design) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(system-design) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(system-design) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(system-design) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-36ssibgs-4"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-36ssibgs-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-36ssibgs-4"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-36ssibgs-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-36ssibgs-4"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-36ssibgs-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-36ssibgs-4"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-36ssibgs-4"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-36ssibgs-5"] { view-transition-name: artificial-general-intelligence; }@layer astro { ::view-transition-old(artificial-general-intelligence) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(artificial-general-intelligence) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(artificial-general-intelligence) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(artificial-general-intelligence) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-36ssibgs-5"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-36ssibgs-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-36ssibgs-5"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-36ssibgs-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-36ssibgs-5"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-36ssibgs-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-36ssibgs-5"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-36ssibgs-5"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style><style>[data-astro-transition-scope="astro-36ssibgs-6"] { view-transition-name: architecture; }@layer astro { ::view-transition-old(architecture) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }::view-transition-new(architecture) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back]::view-transition-old(architecture) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back]::view-transition-new(architecture) { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-36ssibgs-6"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-36ssibgs-6"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-36ssibgs-6"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-36ssibgs-6"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-36ssibgs-6"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-36ssibgs-6"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-36ssibgs-6"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-36ssibgs-6"] { 
+	animation-duration: 180ms;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both;
+	animation-name: astroFadeIn; }</style></head> <body>  <header class="astro-3ef6ksr2"> <a id="skip-to-content" href="#main-content" class="astro-3ef6ksr2">Skip to content</a> <div class="nav-container astro-3ef6ksr2"> <div class="top-nav-wrap astro-3ef6ksr2"> <a href="/" class="logo whitespace-nowrap astro-3ef6ksr2"> Vinci Rufus </a> <nav id="nav-menu" class="astro-3ef6ksr2"> <button class="hamburger-menu focus-outline astro-3ef6ksr2" aria-label="Open Menu" aria-expanded="false" aria-controls="menu-items"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="menu-icon astro-3ef6ksr2"> <line x1="7" y1="12" x2="21" y2="12" class="line astro-3ef6ksr2"></line> <line x1="3" y1="6" x2="21" y2="6" class="line astro-3ef6ksr2"></line> <line x1="12" y1="18" x2="21" y2="18" class="line astro-3ef6ksr2"></line> <line x1="18" y1="6" x2="6" y2="18" class="close astro-3ef6ksr2"></line> <line x1="6" y1="6" x2="18" y2="18" class="close astro-3ef6ksr2"></line> </svg> </button> <ul id="menu-items" class="display-none sm:flex astro-3ef6ksr2"> <li class="astro-3ef6ksr2"> <a href="/posts/" class=" astro-3ef6ksr2">
+Posts
+</a> </li> <li class="astro-3ef6ksr2"> <a href="/tags/" class=" astro-3ef6ksr2">
+Tags
+</a> </li> <li class="astro-3ef6ksr2"> <a href="/about/" class=" astro-3ef6ksr2">
+About
+</a> </li> <li class="astro-3ef6ksr2"> <a href="/archives/" class="group inline-block hover:text-skin-accent focus-outline flex justify-center p-3 sm:p-1 astro-3ef6ksr2" aria-label="archives" title="Archives"> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icons-tabler-outline !hidden sm:!inline-block astro-3ef6ksr2">  <path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-3ef6ksr2"></path> <path d="M3 4m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" class="astro-3ef6ksr2"></path> <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" class="astro-3ef6ksr2"></path> <path d="M10 12l4 0" class="astro-3ef6ksr2"></path>  </svg> <span class="sm:sr-only astro-3ef6ksr2">
+Archives
+</span> </a> </li> <li class="astro-3ef6ksr2"> <a href="/search/" class="group inline-block hover:text-skin-accent focus-outline p-3 sm:p-1  flex astro-3ef6ksr2" aria-label="search" title="Search"> <svg xmlns="http://www.w3.org/2000/svg" class="scale-125 sm:scale-100 astro-3ef6ksr2"><path d="M19.023 16.977a35.13 35.13 0 0 1-1.367-1.384c-.372-.378-.596-.653-.596-.653l-2.8-1.337A6.962 6.962 0 0 0 16 9c0-3.859-3.14-7-7-7S2 5.141 2 9s3.14 7 7 7c1.763 0 3.37-.66 4.603-1.739l1.337 2.8s.275.224.653.596c.387.363.896.854 1.384 1.367l1.358 1.392.604.646 2.121-2.121-.646-.604c-.379-.372-.885-.866-1.391-1.36zM9 14c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z" class="astro-3ef6ksr2"></path> </svg> <span class="sr-only astro-3ef6ksr2">Search</span> </a> </li> <li class="astro-3ef6ksr2"> <button id="theme-btn" class="focus-outline astro-3ef6ksr2" title="Toggles light & dark" aria-label="auto" aria-live="polite"> <svg xmlns="http://www.w3.org/2000/svg" id="moon-svg" class="astro-3ef6ksr2"> <path d="M20.742 13.045a8.088 8.088 0 0 1-2.077.271c-2.135 0-4.14-.83-5.646-2.336a8.025 8.025 0 0 1-2.064-7.723A1 1 0 0 0 9.73 2.034a10.014 10.014 0 0 0-4.489 2.582c-3.898 3.898-3.898 10.243 0 14.143a9.937 9.937 0 0 0 7.072 2.93 9.93 9.93 0 0 0 7.07-2.929 10.007 10.007 0 0 0 2.583-4.491 1.001 1.001 0 0 0-1.224-1.224zm-2.772 4.301a7.947 7.947 0 0 1-5.656 2.343 7.953 7.953 0 0 1-5.658-2.344c-3.118-3.119-3.118-8.195 0-11.314a7.923 7.923 0 0 1 2.06-1.483 10.027 10.027 0 0 0 2.89 7.848 9.972 9.972 0 0 0 7.848 2.891 8.036 8.036 0 0 1-1.484 2.059z" class="astro-3ef6ksr2"></path> </svg> <svg xmlns="http://www.w3.org/2000/svg" id="sun-svg" class="astro-3ef6ksr2"> <path d="M6.993 12c0 2.761 2.246 5.007 5.007 5.007s5.007-2.246 5.007-5.007S14.761 6.993 12 6.993 6.993 9.239 6.993 12zM12 8.993c1.658 0 3.007 1.349 3.007 3.007S13.658 15.007 12 15.007 8.993 13.658 8.993 12 10.342 8.993 12 8.993zM10.998 19h2v3h-2zm0-17h2v3h-2zm-9 9h3v2h-3zm17 0h3v2h-3zM4.219 18.363l2.12-2.122 1.415 1.414-2.12 2.122zM16.24 6.344l2.122-2.122 1.414 1.414-2.122 2.122zM6.342 7.759 4.22 5.637l1.415-1.414 2.12 2.122zm13.434 10.605-1.414 1.414-2.122-2.122 1.414-1.414z" class="astro-3ef6ksr2"></path> </svg> </button> </li> </ul> </nav> </div> </div> <div class="max-w-3xl mx-auto px-4"> <hr class="border-skin-line" aria-hidden="true"> </div> </header>   <div class="mx-auto flex w-full max-w-3xl justify-start px-2 astro-vj4tpspi"> <button class="focus-outline mb-2 mt-8 flex hover:opacity-75 astro-vj4tpspi" onclick="(() => (history.length === 1) ? window.location = '/' : history.back())()"> <svg xmlns="http://www.w3.org/2000/svg" class="astro-vj4tpspi"><path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z" class="astro-vj4tpspi"></path> </svg><span class="astro-vj4tpspi">Go back</span> </button> </div> <main id="main-content" class="astro-vj4tpspi"> <h1 class="post-title astro-vj4tpspi" data-astro-transition-scope="astro-plk3gbjq-1">AGI is an Engineering Problem</h1> <div class="flex items-center space-x-2 opacity-80 my-2 astro-vj4tpspi"><svg xmlns="http://www.w3.org/2000/svg" class="scale-100 inline-block h-6 w-6 min-w-[1.375rem] fill-skin-base" aria-hidden="true"><path d="M7 11h2v2H7zm0 4h2v2H7zm4-4h2v2h-2zm0 4h2v2h-2zm4-4h2v2h-2zm0 4h2v2h-2z"></path><path d="M5 22h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2zM19 8l.001 12H5V8h14z"></path></svg><span class="sr-only">Published:</span><span class="italic text-base"><time dateTime="2025-08-13T10:00:00.000Z">Aug 13, 2025</time><span aria-hidden="true"> | </span><span class="sr-only"> at </span><span class="text-nowrap">11:00 AM</span></span></div> <article id="article" class="prose mx-auto mt-8 max-w-3xl astro-vj4tpspi"> <p>We’ve reached an inflection point in AI development. The scaling laws that once promised ever-more-capable models are showing diminishing returns. GPT-5, Claude, and Gemini represent remarkable achievements, but they’re hitting asymptotes that brute-force scaling can’t solve. The path to artificial general intelligence isn’t through training ever-larger language models—it’s through building engineered systems that combine models, memory, context, and deterministic workflows into something greater than their parts.</p>
+<p>Let me be blunt: <strong>AGI is an engineering problem, not a model training problem.</strong></p>
+<h2 id="the-plateauing-reality">The Plateauing Reality</h2>
+<p>The current generation of large language models has hit a wall that’s become increasingly obvious to anyone working with them daily. They’re impressive pattern matchers and text generators, but they remain fundamentally limited by their inability to maintain coherent context across sessions, their lack of persistent memory, and their stochastic nature that makes them unreliable for complex multi-step reasoning.</p>
+<p>We’ve seen this movie before. Every technology wave follows the same trajectory: initial breakthrough, rapid scaling, then increasing marginal costs for decreasing marginal gains. The semiconductor industry hit this wall in the early 2000s when clock speed scaling became impossible. The solution then wasn’t to brute-force faster processors—it was to fundamentally rethink the architecture with multi-core designs.</p>
+<p><strong>AI is at the same inflection point.</strong> We need to stop asking “how do we make the model bigger?” and start asking “how do we make the system smarter?”</p>
+<h2 id="the-systems-approach-to-agi">The Systems Approach to AGI</h2>
+<p>The human brain isn’t a single neural net—it’s a collection of specialized systems working in concert: memory formation, context management, logical reasoning, spatial navigation, language processing. Each system has evolved specific purposes, and they operate asynchronously with complex feedback loops between them.</p>
+<p><strong>True AGI requires us to engineer similar systems. Here’s what we actually need to build:</strong></p>
+<h3 id="1-context-management-as-infrastructure">1. Context Management as Infrastructure</h3>
+<p>Current models have attention spans measured in thousands of tokens. Human context span extends across years of lived experience. The gap isn’t just quantitative—it’s qualitative. We need context management systems that can:</p>
+<ul>
+<li><strong>Retrieve and filter relevant information</strong> on-demand using sophisticated retrieval systems</li>
+<li><strong>Maintain coherent world models</strong> that persist across sessions and evolve with new information</li>
+<li><strong>Bridge context gaps</strong> between different specialized knowledge domains</li>
+<li><strong>Handle conflicting information</strong> with probabilistic weighting and uncertainty quantification</li>
+</ul>
+<p>This requires moving beyond simple vector similarity searches to building operational knowledge graphs that can be updated, queried, and reasoned about in real-time. <a href="/blog/context-engineering">Our work on Context Engineering</a> provides a foundation for these systems.</p>
+<h3 id="2-memory-as-a-service">2. Memory as a Service</h3>
+<p>LLMs don’t have memory—they engage in elaborate methods to fake it through prompt engineering and context stuffing. Real AGI needs memory systems that:</p>
+<ul>
+<li><strong>Update beliefs</strong> when contradicted by new evidence</li>
+<li><strong>Consolidate information</strong> across multiple experiences into general principles</li>
+<li><strong>Forget irrelevant details</strong> without catastrophic forgetting</li>
+<li><strong>Generate meta-knowledge</strong> about the reliability and source of stored information</li>
+</ul>
+<p>This isn’t just database persistence—it’s building memory systems that evolve the way human memory does: strengthening with use, decaying with disuse, and reorganizing based on new understanding. The <a href="/blog/adr">architectural patterns from software systems</a> show us how to design such evolving structures.</p>
+<h3 id="3-deterministic-workflows-with-probabilistic-components">3. Deterministic Workflows with Probabilistic Components</h3>
+<p>The real breakthrough in AGI will come from building deterministic frameworks that can incorporate probabilistic components when appropriate. Think of it like building a compiler: the overall flow is rigid and predictable, but individual steps can use heuristics and probabilistic optimization.</p>
+<p><strong>We need systems that can:</strong></p>
+<ul>
+<li><strong>Route problems</strong> to appropriate specialized solvers based on problem characteristics</li>
+<li><strong>Execute multi-step workflows</strong> with rollback and recovery capabilities</li>
+<li><strong>Validate outputs</strong> through deterministic checks before accepting probabilistic results</li>
+<li><strong>Compose capabilities</strong> in predictable ways while maintaining the benefits of stochastic generation</li>
+</ul>
+<p>Our <a href="/blog/deterministic-vs-propapbistic">research on deterministic vs. probabilistic systems</a> demonstrates how we can build these hybrid architectures effectively. The key insight is that <strong>uncertainty should be a first-class concept</strong> in system design, not something we try to eliminate.</p>
+<h3 id="4-specialized-models-as-modular-components">4. Specialized Models as Modular Components</h3>
+<p>The future isn’t one model to rule them all—it’s hundreds or thousands of specialized models working together in orchestrated workflows. Language models remain excellent at linguistic tasks, but they’re terrible at:</p>
+<ul>
+<li><strong>Symbolic manipulation</strong> and exact calculation</li>
+<li><strong>Visual-spatial reasoning</strong> beyond basic pattern matching</li>
+<li><strong>Temporal reasoning</strong> and planning complex sequences</li>
+<li><strong>Intentional agent behavior</strong> with persistent goals</li>
+</ul>
+<p>Instead of waiting for a breakthrough that makes language models good at everything, we should be building systems that:</p>
+<ul>
+<li><strong>Route problems</strong> to models optimized for specific domains (<a href="/blog/thinking-in-agents">thinking in agents</a> demonstrates this approach)</li>
+<li><strong>Combine outputs</strong> from different model types into coherent solutions</li>
+<li><strong>Maintain compatibility</strong> while allowing individual components to evolve independently</li>
+<li><strong>Handle failure gracefully</strong> when individual models underperform</li>
+</ul>
+<h2 id="the-engineering-challenge">The Engineering Challenge</h2>
+<p>This brings us to the core insight: <strong>building AGI is a distributed systems problem, not a machine learning problem.</strong> We’ve been fooled into thinking that because data center-scale training clusters are distributed systems, we’re already doing systems engineering. Nothing could be further from the truth.</p>
+<p><strong>The real engineering challenge is building:</strong></p>
+<ul>
+<li><strong>Fault-tolerant pipelines</strong> where component failures don’t cascade into system failures</li>
+<li><strong>Monitoring and observability</strong> systems that can detect when model outputs are drifting or becoming unreliable</li>
+<li><strong>Deployment systems</strong> that allow for rolling updates without breaking existing integrations</li>
+<li><strong>Testing frameworks</strong> that can validate system behavior across thousands of model and parameter combinations</li>
+</ul>
+<p>This is the kind of engineering challenge that requires decades of distributed systems experience, not just machine learning expertise. The solutions will come from infrastructure engineers who understand how to build reliable, scalable systems at the intersection of hardware, software, and AI models.</p>
+<h2 id="what-we-should-be-building-instead">What We Should Be Building Instead</h2>
+<p>While everyone else is focused on scaling the next model, we should be building the infrastructure that makes general intelligence possible. Here’s my roadmap:</p>
+<h3 id="phase-1-foundation-layer">Phase 1: Foundation Layer</h3>
+<ul>
+<li><strong>Context Management Service</strong>: Persistent, queryable, versioned knowledge graphs with real-time updates</li>
+<li><strong>Memory Service</strong>: Episodic and semantic memory systems with learned consolidation patterns</li>
+<li><strong>Workflow Engine</strong>: Deterministic orchestration of probabilistic components with rollback capabilities</li>
+<li><strong>Agent Coordination Layer</strong>: Multi-agent systems with negotiated consensus and conflict resolution</li>
+</ul>
+<h3 id="phase-2-capability-layer">Phase 2: Capability Layer</h3>
+<ul>
+<li><strong>Specialized Model Controls</strong>: Fine-tuned models for specific reasoning domains with standardized interfaces</li>
+<li><strong>Symbolic Reasoning Engine</strong>: Exact calculation and symbolic manipulation capabilities that work with probabilistic components</li>
+<li><strong>Planning and Goal Management</strong>: Systems that can break complex objectives into executable sub-plans</li>
+<li><strong>Cross-modal Integration</strong>: Systems that combine sensory inputs (text, vision, audio) into unified representations</li>
+</ul>
+<h3 id="phase-3-emergence-layer">Phase 3: Emergence Layer</h3>
+<p>This is where real AGI emerges—from the interaction of all these components working together, not from any single breakthrough model. The system’s capabilities will exceed those of its individual parts through emergent properties that arise from careful architectural design.</p>
+<h2 id="the-path-forward">The Path Forward</h2>
+<p>The path to AGI isn’t through training a bigger transformer—it’s through building distributed systems that can orchestrate hundreds of specialized models, maintain coherent context across sessions, execute deterministic workflows around probabilistic components, and provide fault-tolerant operation at production scale.</p>
+<p>This is fundamentally <strong>engineering work</strong>, requiring decades of experience building reliable distributed systems. The breakthroughs will come from infrastructure engineers who understand how to build context paths, memory systems, workflow orchestration, and model coordination at scale.</p>
+<p><strong>The race to AGI isn’t being won by the team with the biggest GPU cluster—it’s being won by the team that understands how to build reliable, engineered AI systems that can actually reason across domains while maintaining consistent behavior.</strong></p>
+<p>The models we have now are sufficient. The missing piece is the systems engineering that turns them into general intelligence.</p>
+<p>We’ve been asking the wrong question. It’s not “how do we get to the next model breakthrough?” It’s “how do we build the system architecture that makes general intelligence inevitable with the models we already have?”</p>
+<p>The answer is systems engineering. The future of AGI is architectural, not algorithmic.</p> </article> <ul class="my-8 astro-vj4tpspi"> <li class="inline-block my-1 underline-offset-4 astro-blwjyjpt"> <a href="/tags/agi/" class="text-sm pr-2 group astro-blwjyjpt" data-astro-transition-scope="astro-36ssibgs-2"> <svg xmlns="http://www.w3.org/2000/svg" class=" scale-75 astro-blwjyjpt"><path d="M16.018 3.815 15.232 8h-4.966l.716-3.815-1.964-.37L8.232 8H4v2h3.857l-.751 4H3v2h3.731l-.714 3.805 1.965.369L8.766 16h4.966l-.714 3.805 1.965.369.783-4.174H20v-2h-3.859l.751-4H21V8h-3.733l.716-3.815-1.965-.37zM14.106 14H9.141l.751-4h4.966l-.752 4z" class="astro-blwjyjpt"></path> </svg>
+&nbsp;<span class="astro-blwjyjpt">agi</span> </a> </li> <li class="inline-block my-1 underline-offset-4 astro-blwjyjpt"> <a href="/tags/ai-engineering/" class="text-sm pr-2 group astro-blwjyjpt" data-astro-transition-scope="astro-36ssibgs-3"> <svg xmlns="http://www.w3.org/2000/svg" class=" scale-75 astro-blwjyjpt"><path d="M16.018 3.815 15.232 8h-4.966l.716-3.815-1.964-.37L8.232 8H4v2h3.857l-.751 4H3v2h3.731l-.714 3.805 1.965.369L8.766 16h4.966l-.714 3.805 1.965.369.783-4.174H20v-2h-3.859l.751-4H21V8h-3.733l.716-3.815-1.965-.37zM14.106 14H9.141l.751-4h4.966l-.752 4z" class="astro-blwjyjpt"></path> </svg>
+&nbsp;<span class="astro-blwjyjpt">ai-engineering</span> </a> </li> <li class="inline-block my-1 underline-offset-4 astro-blwjyjpt"> <a href="/tags/system-design/" class="text-sm pr-2 group astro-blwjyjpt" data-astro-transition-scope="astro-36ssibgs-4"> <svg xmlns="http://www.w3.org/2000/svg" class=" scale-75 astro-blwjyjpt"><path d="M16.018 3.815 15.232 8h-4.966l.716-3.815-1.964-.37L8.232 8H4v2h3.857l-.751 4H3v2h3.731l-.714 3.805 1.965.369L8.766 16h4.966l-.714 3.805 1.965.369.783-4.174H20v-2h-3.859l.751-4H21V8h-3.733l.716-3.815-1.965-.37zM14.106 14H9.141l.751-4h4.966l-.752 4z" class="astro-blwjyjpt"></path> </svg>
+&nbsp;<span class="astro-blwjyjpt">system-design</span> </a> </li> <li class="inline-block my-1 underline-offset-4 astro-blwjyjpt"> <a href="/tags/artificial-general-intelligence/" class="text-sm pr-2 group astro-blwjyjpt" data-astro-transition-scope="astro-36ssibgs-5"> <svg xmlns="http://www.w3.org/2000/svg" class=" scale-75 astro-blwjyjpt"><path d="M16.018 3.815 15.232 8h-4.966l.716-3.815-1.964-.37L8.232 8H4v2h3.857l-.751 4H3v2h3.731l-.714 3.805 1.965.369L8.766 16h4.966l-.714 3.805 1.965.369.783-4.174H20v-2h-3.859l.751-4H21V8h-3.733l.716-3.815-1.965-.37zM14.106 14H9.141l.751-4h4.966l-.752 4z" class="astro-blwjyjpt"></path> </svg>
+&nbsp;<span class="astro-blwjyjpt">artificial-general-intelligence</span> </a> </li> <li class="inline-block my-1 underline-offset-4 astro-blwjyjpt"> <a href="/tags/architecture/" class="text-sm pr-2 group astro-blwjyjpt" data-astro-transition-scope="astro-36ssibgs-6"> <svg xmlns="http://www.w3.org/2000/svg" class=" scale-75 astro-blwjyjpt"><path d="M16.018 3.815 15.232 8h-4.966l.716-3.815-1.964-.37L8.232 8H4v2h3.857l-.751 4H3v2h3.731l-.714 3.805 1.965.369L8.766 16h4.966l-.714 3.805 1.965.369.783-4.174H20v-2h-3.859l.751-4H21V8h-3.733l.716-3.815-1.965-.37zM14.106 14H9.141l.751-4h4.966l-.752 4z" class="astro-blwjyjpt"></path> </svg>
+&nbsp;<span class="astro-blwjyjpt">architecture</span> </a> </li>  </ul> <div class="flex flex-col-reverse items-center justify-between gap-6 sm:flex-row-reverse sm:items-end sm:gap-4 astro-vj4tpspi"> <button id="back-to-top" class="focus-outline whitespace-nowrap py-1 hover:opacity-75 astro-vj4tpspi"> <svg xmlns="http://www.w3.org/2000/svg" class="rotate-90 astro-vj4tpspi"> <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z" class="astro-vj4tpspi"></path> </svg> <span class="astro-vj4tpspi">Back to Top</span> </button> <div class="social-icons astro-wkojbtzc"> <span class="italic astro-wkojbtzc">Share this post on:</span> <div class="text-center astro-wkojbtzc"> <a href="https://wa.me/?text=https://www.vincirufus.com/posts/agi-is-engineering-problem/" class="group inline-block hover:text-skin-accent link-button astro-wkojbtzc" title="Share this post via WhatsApp"> <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="icon-tabler"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path>
+      <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1"></path>
+    </svg> <span class="sr-only astro-wkojbtzc">Share this post via WhatsApp</span> </a><a href="https://www.facebook.com/sharer.php?u=https://www.vincirufus.com/posts/agi-is-engineering-problem/" class="group inline-block hover:text-skin-accent link-button astro-wkojbtzc" title="Share this post on Facebook"> <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="icon-tabler"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+    <path
+      d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+    ></path>
+  </svg> <span class="sr-only astro-wkojbtzc">Share this post on Facebook</span> </a><a href="https://x.com/intent/post?url=https://www.vincirufus.com/posts/agi-is-engineering-problem/" class="group inline-block hover:text-skin-accent link-button astro-wkojbtzc" title="Share this post on X"> <svg  
+      xmlns="http://www.w3.org/2000/svg"
+      class="icon-tabler"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <path d="M4 4l11.733 16h4.267l-11.733 -16z" /><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+    </svg> <span class="sr-only astro-wkojbtzc">Share this post on X</span> </a><a href="https://t.me/share/url?url=https://www.vincirufus.com/posts/agi-is-engineering-problem/" class="group inline-block hover:text-skin-accent link-button astro-wkojbtzc" title="Share this post via Telegram"> <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon-tabler"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M15 10l-4 4l6 6l4 -16l-18 7l4 2l2 6l3 -4"></path>
+      </svg> <span class="sr-only astro-wkojbtzc">Share this post via Telegram</span> </a><a href="https://pinterest.com/pin/create/button/?url=https://www.vincirufus.com/posts/agi-is-engineering-problem/" class="group inline-block hover:text-skin-accent link-button astro-wkojbtzc" title="Share this post on Pinterest"> <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="icon-tabler"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+      <line x1="8" y1="20" x2="12" y2="11"></line>
+      <path d="M10.7 14c.437 1.263 1.43 2 2.55 2c2.071 0 3.75 -1.554 3.75 -4a5 5 0 1 0 -9.7 1.7"></path>
+      <circle cx="12" cy="12" r="9"></circle>
+    </svg> <span class="sr-only astro-wkojbtzc">Share this post on Pinterest</span> </a> </div> </div>  </div> <hr class="my-6 border-dashed astro-vj4tpspi"> <!-- Previous/ Buttons --> <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 astro-vj4tpspi">  <a href="/posts/context-engineering/" class="flex w-full justify-end gap-1 text-right hover:opacity-75 sm:col-start-2 astro-vj4tpspi"> <div class="astro-vj4tpspi"> <span class="astro-vj4tpspi">Next Post</span> <div class="text-sm text-skin-accent/85 astro-vj4tpspi">Context Engineering - The Evolution Beyond Prompt Engineering</div> </div> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right flex-none astro-vj4tpspi">  <path stroke="none" d="M0 0h24v24H0z" fill="none" class="astro-vj4tpspi"></path> <path d="M9 6l6 6l-6 6" class="astro-vj4tpspi"></path>  </svg> </a> </div> </main> <footer class="mt-auto astro-sz7xmlte"> <div class="max-w-3xl mx-auto px-0"> <hr class="border-skin-line" aria-hidden="true"> </div> <div class="footer-wrapper astro-sz7xmlte"> <div class="social-icons flex astro-upu6fzxr"> <a href="https://github.com/areai51" class="group inline-block hover:text-skin-accent link-button astro-upu6fzxr" title=" Vinci Rufus on Github"> <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="icon-tabler"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+    <path
+      d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+    ></path>
+  </svg> <span class="sr-only astro-upu6fzxr"> Vinci Rufus on Github</span> </a><a href="https://www.linkedin.com/in/vinci" class="group inline-block hover:text-skin-accent link-button astro-upu6fzxr" title="Vinci Rufus on LinkedIn"> <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="icon-tabler"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+    <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+    <line x1="8" y1="11" x2="8" y2="16"></line>
+    <line x1="8" y1="8" x2="8" y2="8.01"></line>
+    <line x1="12" y1="16" x2="12" y2="11"></line>
+    <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+  </svg> <span class="sr-only astro-upu6fzxr">Vinci Rufus on LinkedIn</span> </a> </div>  <div class="copyright-wrapper astro-sz7xmlte"> <span class="astro-sz7xmlte">Copyright &#169; 2025</span> <span class="separator astro-sz7xmlte">&nbsp;|&nbsp;</span> <span class="astro-sz7xmlte">All rights reserved.</span> </div> </div> </footer>   </body></html>  <script data-astro-rerun>
+  /** Create a progress indicator
+   *  at the top */
+  function createProgressBar() {
+    // Create the main container div
+    const progressContainer = document.createElement("div");
+    progressContainer.className =
+      "progress-container fixed top-0 z-10 h-1 w-full bg-skin-fill";
+
+    // Create the progress bar div
+    const progressBar = document.createElement("div");
+    progressBar.className = "progress-bar h-1 w-0 bg-skin-accent";
+    progressBar.id = "myBar";
+
+    // Append the progress bar to the progress container
+    progressContainer.appendChild(progressBar);
+
+    // Append the progress container to the document body or any other desired parent element
+    document.body.appendChild(progressContainer);
+  }
+  createProgressBar();
+
+  /** Update the progress bar
+   *  when user scrolls */
+  function updateScrollProgress() {
+    document.addEventListener("scroll", () => {
+      const winScroll =
+        document.body.scrollTop || document.documentElement.scrollTop;
+      const height =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      if (document) {
+        const myBar = document.getElementById("myBar");
+        if (myBar) {
+          myBar.style.width = scrolled + "%";
+        }
+      }
+    });
+  }
+  updateScrollProgress();
+
+  /** Attaches links to headings in the document,
+   *  allowing sharing of sections easily */
+  function addHeadingLinks() {
+    const headings = Array.from(
+      document.querySelectorAll("h2, h3, h4, h5, h6")
+    );
+    for (const heading of headings) {
+      heading.classList.add("group");
+      const link = document.createElement("a");
+      link.className =
+        "heading-link ml-2 opacity-0 group-hover:opacity-100 focus:opacity-100";
+      link.href = "#" + heading.id;
+
+      const span = document.createElement("span");
+      span.ariaHidden = "true";
+      span.innerText = "#";
+      link.appendChild(span);
+      heading.appendChild(link);
+    }
+  }
+  addHeadingLinks();
+
+  /** Attaches copy buttons to code blocks in the document,
+   * allowing users to copy code easily. */
+  function attachCopyButtons() {
+    const copyButtonLabel = "Copy";
+    const codeBlocks = Array.from(document.querySelectorAll("pre"));
+
+    for (const codeBlock of codeBlocks) {
+      const wrapper = document.createElement("div");
+      wrapper.style.position = "relative";
+
+      const copyButton = document.createElement("button");
+      copyButton.className =
+        "copy-code absolute right-3 -top-3 rounded bg-skin-card px-2 py-1 text-xs leading-4 text-skin-base font-medium";
+      copyButton.innerHTML = copyButtonLabel;
+      codeBlock.setAttribute("tabindex", "0");
+      codeBlock.appendChild(copyButton);
+
+      // wrap codebock with relative parent element
+      codeBlock?.parentNode?.insertBefore(wrapper, codeBlock);
+      wrapper.appendChild(codeBlock);
+
+      copyButton.addEventListener("click", async () => {
+        await copyCode(codeBlock, copyButton);
+      });
+    }
+
+    async function copyCode(block, button) {
+      const code = block.querySelector("code");
+      const text = code?.innerText;
+
+      await navigator.clipboard.writeText(text ?? "");
+
+      // visual feedback that task is completed
+      button.innerText = "Copied";
+
+      setTimeout(() => {
+        button.innerText = copyButtonLabel;
+      }, 700);
+    }
+  }
+  attachCopyButtons();
+
+  /** Scrolls the document to the top when
+   * the "Back to Top" button is clicked. */
+  function backToTop() {
+    document.querySelector("#back-to-top")?.addEventListener("click", () => {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    });
+  }
+  backToTop();
+
+  /* Go to page start after page swap */
+  document.addEventListener("astro:after-swap", () =>
+    window.scrollTo({ left: 0, top: 0, behavior: "instant" })
+  );
+</script>
