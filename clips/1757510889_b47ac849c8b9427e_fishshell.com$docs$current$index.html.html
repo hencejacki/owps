@@ -1,0 +1,285 @@
+<!DOCTYPE html> <html lang=en data-content_root=./ style><!--
+ Page saved with SingleFile 
+ url: https://fishshell.com/docs/current/index.html 
+ saved date: Wed Sep 10 2025 21:28:06 GMT+0800 (中国标准时间)
+--><meta charset=utf-8>
+<meta name=viewport content="width=device-width, initial-scale=1.0"><meta name=viewport content="width=device-width, initial-scale=1">
+<title>Introduction — fish-shell 4.0.2 documentation</title>
+<style>:root{--sf-img-0: url("data:image/png;base64,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")}</style><style>.highlight .o{color:#005F66}.highlight .p{color:#000f8f}.highlight .c{color:#575757;font-style:italic}.highlight .no{color:#000f8f}.highlight .nf{color:#004BCC}.highlight .w{color:#f8f8f8}:root{--contrast:#000000}@media (prefers-color-scheme:dark){:root{--contrast:#FFFFFF}.highlight .no{color:#00bfff}.highlight .p{color:#00bfff}.highlight .nf{color:#00a0ff}.highlight .c{color:#969696;font-style:italic}.highlight .o{color:#00F6b2}}.highlight .gp{color:var(--contrast)}</style>
+<style>:root{color-scheme:light dark;--link-color:#0030B3;--visited-link-color:#6363bb;--hover-link-color:#00A5F4;--text-color:#222;--main-background:#EEEEFA;--secondary-background:#ddddea;--outer-background:linear-gradient(to bottom,#a7cfdf 0%,#23538a 100%);--code-background:rgba(255,255,255,.2);--code-border:#ac9;--sidebar-border-color:#ccc;--secondary-link-color:#444;--highlight-background:#FFF;--td-background:white}html{background:none;min-height:100%}body{background:var(--outer-background)}html,body,input{font-family:"Segoe UI",system-ui,sans-serif}body{font-size:100%;background-color:var(--main-background);margin:0;padding:0}div.related ul{margin:0;padding:0 0 0 10px}div.related{line-height:30px;color:#666666;font-size:90%}div.related li{display:inline}div.related li.right{margin-right:5px}div.sphinxsidebar{overflow-wrap:break-word}pre{line-height:120%;overflow:auto;overflow-y:hidden}div.body h1{font-size:200%}div.body h1,div.body h2,div.body h3{font-weight:normal}:not(li)>ol>li:last-child>:last-child,:not(li)>ul>li:last-child>:last-child{margin-bottom:0px}div.sphinxsidebar ul ul{margin-top:0;margin-bottom:0}div.sphinxsidebar ul ul{margin-left:20px;list-style:square}div.sphinxsidebar ul{padding:0;color:var(--secondary-link-color);list-style:none}div.sphinxsidebarwrapper{padding:10px 5px 0 10px}div[class*="highlight-"]{margin:1em 0}div.sphinxsidebar #searchbox input[type="text"]{width:80%;padding:0.25em}div.sphinxsidebar #searchbox input[type="submit"]{width:20%;padding:0.25em}div.sphinxsidebar form{margin-top:10px}div.sphinxsidebar h3{font-size:1.4em;font-weight:normal;margin:0;padding:0}div.sphinxsidebar h4{color:var(--secondary-link-color);font-size:1.3em;font-weight:normal;margin:5px 0 0 0;padding:0}div.body h2{font-size:160%}a{text-decoration:none}a.headerlink{font-size:0.8em;padding:0 4px 0 4px;visibility:hidden}*:hover>a.headerlink{visibility:visible}a:hover,div.footer a{text-decoration:underline}div.related a,div.sphinxsidebar a{color:var(--secondary-link-color)}div.warning{border:1px solid #f66}div.admonition{padding:7px}p.admonition-title::after{content:":"}p.admonition-title{display:inline;font-weight:bold}div.admonition p.admonition-title+p{display:inline}div.footer{padding:9px 0 9px 0;font-size:75%}div#fmain{color:var(--text-color);padding:1em 2em;background-color:var(--main-background);border-radius:14px;position:relative;margin:1em auto 1em;box-shadow:0 0 5px 1px #333;width:90%;max-width:1270px}div.related{margin-bottom:0;padding:0.5em 0;border-top:1px solid;border-color:var(--sidebar-border-color);margin-top:0}div.related:first-child{border-top:0;border-bottom:1px solid;border-color:var(--sidebar-border-color)}.inline-search{display:inline}form.inline-search input{display:inline}form.inline-search input[type="submit"]{width:40px}div.sphinxsidebar{border-right:1px solid;border-color:var(--sidebar-border-color);border-radius:0px;line-height:1em;font-size:smaller;margin-left:0;float:left;overflow:auto;position:sticky;top:0;max-height:100vh;scrollbar-width:thin}div.sphinxsidebar::-webkit-scrollbar{width:5px}div.sphinxsidebar::-webkit-scrollbar-thumb{background-color:grey;border-radius:10px}div.sphinxsidebar h3,div.sphinxsidebar h4{margin-top:1em}ul li,div.body li{line-height:2em}ul.simple p{margin-bottom:0;margin-top:0}ul.simple>li:not(:first-child)>p{margin-top:0}form.inline-search input,div.sphinxsidebar input{border:1px solid;border-color:var(--sidebar-border-color);font-size:smaller;border-radius:3px}div.sphinxsidebar input[type=text]{max-width:150px}div.body{padding:10px 0 0 1.2em;min-width:150px;max-width:800px}div.body p{line-height:2em;text-align:left}div.body h1,div.body h2,div.body h3{margin:0;border:0;padding:0.3em 0}div.body h3{font-size:140%}div.body pre,code{border-radius:3px;border:1px solid;border-color:var(--code-border)}div.highlight{position:relative}div.highlight pre{padding:10px}pre button{position:absolute;top:4px;right:4px;opacity:0}div.highlight pre:hover>button{opacity:1}div.body div.admonition{border-radius:3px}a{color:var(--link-color)}div.body a:visited{color:var(--visited-link-color)}div.related a:hover,div.footer a:hover,div.sphinxsidebar a:hover,div.body a:hover{color:var(--hover-link-color)}code{background-color:var(--code-background);padding-left:5px;padding-right:5px;margin-left:3px;margin-right:3px}code,pre,.command,button{font-family:ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,"Ubuntu Mono","Hack","Noto Sans Mono",Liberation Mono,monospace}.highlight .gp{-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default}div.body code.xref{font-weight:normal}div.footer{line-height:1em;margin-top:-2em;text-align:right;width:auto;margin-right:10px}.highlight{background:var(--highlight-background)}div.sphinxsidebar ul{margin:1em 10px 1em 10px}div.documentwrapper{width:100%}div.document{display:grid;grid-template:1fr min-content/12rem minmax(0,1fr)}@media screen and (max-width:700px){div.document{display:grid;grid-template:30vh min-content/100%}div.sphinxsidebar{font-size:16px;width:100%;height:auto;position:relative;border-bottom:1px solid;border-color:var(--sidebar-border-color)}div.sphinxsidebar ul ul,div.bodywrapper{margin-left:0}div.sphinxsidebar h3,div.sphinxsidebar h4{margin-top:0}div.sphinxsidebar ul{flex-basis:content;flex-wrap:wrap}div.sphinxsidebarwrapper{display:flex;gap:1em;justify-content:space-between}#searchbox{display:none!important}div.body{padding:1rem}div#fmain{border-radius:0px;margin:0;width:100%;padding:0;overflow:clip}div.footer{margin:0}}.sphinxsidebar ul.current>li.current{font-weight:bold}.command{color:#005fd7}div.body a{text-decoration:underline}.std-envvar::before{content:"$"}@media (prefers-color-scheme:dark){:root{--link-color:#5fb0fc;--text-color:#DDD;--main-background:#202028;--secondary-background:#112;--outer-background:linear-gradient(to top,#1f1f3f 0%,#051f3a 100%);--code-background:rgba(20,20,25,.2);--code-border:#536;--sidebar-border-color:#666;--secondary-link-color:#DDD;--highlight-background:#000;--td-background:#111}div#fmain{box-shadow:0 0 5px 1px #000}.command{color:#008fd7}}</style>
+<link rel=index title=Index href=https://fishshell.com/docs/current/genindex.html>
+<link rel=search title=Search href=https://fishshell.com/docs/current/search.html>
+<link rel=next title="Frequently asked questions" href=https://fishshell.com/docs/current/faq.html>
+<meta name=referrer content=no-referrer><link rel="shortcut icon" type=image/png href=data:image/png;base64,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><style>.sf-hidden{display:none!important}</style><link rel=canonical href=https://fishshell.com/docs/current/index.html><meta http-equiv=content-security-policy content="default-src 'none'; font-src 'self' data:; img-src 'self' data:; style-src 'unsafe-inline'; media-src 'self' data:; script-src 'unsafe-inline' data:; object-src 'self' data:; frame-src 'self' data:;"><body><div id=fmain> 
+ <div class=related role=navigation aria-label=Related>
+ <h3 class=sf-hidden>Navigation</h3>
+ <ul>
+ <li><img src='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256"><rect fill-opacity="0"/></svg>' alt style="width:80px;height:80px;vertical-align:middle;margin-top:-1px;background-blend-mode:normal!important;background-clip:content-box!important;background-position:50% 50%!important;background-color:rgba(0,0,0,0)!important;background-image:var(--sf-img-0)!important;background-size:100% 100%!important;background-origin:content-box!important;background-repeat:no-repeat!important"></li>
+ <li><a href=https://fishshell.com/>fish-shell</a> »</li>
+ 
+ <a href=#>fish-shell 4.0.2 documentation</a> »
+ 
+ <li class="nav-item nav-item-this"><a href=https://fishshell.com/docs/current/index.html>Introduction</a></li>
+ <li class=right>
+ 
+ <div class=inline-search role=search>
+ <form class=inline-search action=search.html>
+ <input placeholder="Quick search" type=text name=q value>
+ <input type=submit value=Go>
+ 
+ 
+ </form>
+ </div>
+ </li>
+ 
+ <div id=old-docs-notice style=display:none>
+ This documents an old version of fish.
+ 
+ </div>
+ </ul>
+ </div> 
+ <div class=document>
+ <div class=sphinxsidebar role=navigation aria-label=Main>
+ <div class=sphinxsidebarwrapper>
+<div>
+<h3><a href=#>Documents</a></h3>
+<ul class=current>
+<li class="toctree-l1 current"><a class="current reference internal" href=#>Introduction</a></li>
+<li class=toctree-l1><a class="reference internal" href=https://fishshell.com/docs/current/faq.html>Frequently asked questions</a></li>
+<li class=toctree-l1><a class="reference internal" href=https://fishshell.com/docs/current/interactive.html>Interactive use</a></li>
+<li class=toctree-l1><a class="reference internal" href=https://fishshell.com/docs/current/language.html>The fish language</a></li>
+<li class=toctree-l1><a class="reference internal" href=https://fishshell.com/docs/current/commands.html>Commands</a></li>
+<li class=toctree-l1><a class="reference internal" href=https://fishshell.com/docs/current/fish_for_bash_users.html>Fish for bash users</a></li>
+<li class=toctree-l1><a class="reference internal" href=https://fishshell.com/docs/current/tutorial.html>Tutorial</a></li>
+<li class=toctree-l1><a class="reference internal" href=https://fishshell.com/docs/current/completions.html>Writing your own completions</a></li>
+<li class=toctree-l1><a class="reference internal" href=https://fishshell.com/docs/current/prompt.html>Writing your own prompt</a></li>
+<li class=toctree-l1><a class="reference internal" href=https://fishshell.com/docs/current/design.html>Design</a></li>
+<li class=toctree-l1><a class="reference internal" href=https://fishshell.com/docs/current/relnotes.html>Release notes</a></li>
+<li class=toctree-l1><a class="reference internal" href=https://fishshell.com/docs/current/contributing.html>Contributing To Fish</a></li>
+<li class=toctree-l1><a class="reference internal" href=https://fishshell.com/docs/current/license.html>License</a></li>
+</ul>
+</div>
+<search id=searchbox style=display:block role=search>
+ <h3 id=searchlabel>Quick search</h3>
+ <div class=searchformwrapper>
+ <form class=search action=search.html>
+ <input type=text name=q aria-labelledby=searchlabel autocomplete=off autocorrect=off autocapitalize=off spellcheck=false value>
+ <input type=submit value=Go>
+ </form>
+ </div>
+</search>
+<div>
+<h4><a href=#>Sections</a></h4>
+<ul>
+<li><a class="reference internal" href=#>Introduction</a><ul>
+<li><a class="reference internal" href=#where-to-go>Where to go?</a></li>
+<li><a class="reference internal" href=#installation>Installation</a><ul>
+<li><a class="reference internal" href=#id1>Installation</a></li>
+<li><a class="reference internal" href=#starting-and-exiting>Starting and Exiting</a></li>
+<li><a class="reference internal" href=#default-shell>Default Shell</a></li>
+<li><a class="reference internal" href=#uninstalling>Uninstalling</a></li>
+<li><a class="reference internal" href=#shebang-line>Shebang Line</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href=#configuration>Configuration</a><ul>
+<li><a class="reference internal" href=#examples>Examples:</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href=#resources>Resources</a></li>
+<li><a class="reference internal" href=#other-help-pages>Other help pages</a></li>
+</ul>
+</li>
+</ul>
+</div>
+ </div>
+ </div>
+ <div class=documentwrapper>
+ <div class=bodywrapper>
+ <div class=body role=main>
+ 
+ <section id=introduction>
+<span id=intro></span><h1>Introduction<a class=headerlink href=#introduction title="Link to this heading">¶</a></h1>
+<p>This is the documentation for <strong class=command>fish</strong>, the <strong>f</strong>riendly <strong>i</strong>nteractive <strong>sh</strong>ell.</p>
+<p>A shell is a program that helps you operate your computer by starting other programs. fish offers a command-line interface focused on usability and interactive use.</p>
+<p>Some of the special features of fish are:</p>
+<ul class=simple>
+<li><p><strong>Extensive UI</strong>: <a class="reference internal" href=https://fishshell.com/docs/current/interactive.html#color><span class="std std-ref">Syntax highlighting</span></a>, <a class="reference internal" href=https://fishshell.com/docs/current/interactive.html#autosuggestions><span class="std std-ref">Autosuggestions</span></a>, <a class="reference internal" href=https://fishshell.com/docs/current/interactive.html#tab-completion><span class="std std-ref">tab completion</span></a> and selection lists that can be navigated and filtered.</p></li>
+<li><p><strong>No configuration needed</strong>: fish is designed to be ready to use immediately, without requiring extensive configuration.</p></li>
+<li><p><strong>Easy scripting</strong>: New <a class="reference internal" href=https://fishshell.com/docs/current/language.html#syntax-function><span class="std std-ref">functions</span></a> can be added on the fly. The syntax is easy to learn and use.</p></li>
+</ul>
+<p>This page explains how to install and set up fish and where to get more information.</p>
+<section id=where-to-go>
+<h2>Where to go?<a class=headerlink href=#where-to-go title="Link to this heading">¶</a></h2>
+<p>If this is your first time using fish, see the <a class="reference internal" href=https://fishshell.com/docs/current/tutorial.html#tutorial><span class="std std-ref">tutorial</span></a>.</p>
+<p>If you are already familiar with other shells like bash and want to see the scripting differences, see <a class="reference internal" href=https://fishshell.com/docs/current/fish_for_bash_users.html#fish-for-bash-users><span class="std std-ref">Fish For Bash Users</span></a>.</p>
+<p>For an overview of fish’s scripting language, see <a class="reference internal" href=https://fishshell.com/docs/current/language.html#language><span class="std std-ref">The Fish Language</span></a>. If it would be useful in a script file, it’s here.</p>
+<p>For information on using fish interactively, see <a class="reference internal" href=https://fishshell.com/docs/current/interactive.html#interactive><span class="std std-ref">Interactive use</span></a>. If it’s about key presses, syntax highlighting or anything else that needs an interactive terminal session, look here.</p>
+<p>If you need to install fish first, read on, the rest of this document will tell you how to get, install and configure fish.</p>
+</section>
+<section id=installation>
+<h2>Installation<a class=headerlink href=#installation title="Link to this heading">¶</a></h2>
+<p>This section describes how to install, uninstall, start, and exit <strong class=command>fish</strong>. It also explains how to make fish the default shell.</p>
+<section id=id1>
+<h3>Installation<a class=headerlink href=#id1 title="Link to this heading">¶</a></h3>
+<p>Up-to-date instructions for installing the latest version of fish are on the <a class="reference external" href=https://fishshell.com/>fish homepage</a>.</p>
+<p>To install the development version of fish, see the instructions on the <a class="reference external" href=https://github.com/fish-shell/fish-shell>project’s GitHub page</a>.</p>
+</section>
+<section id=starting-and-exiting>
+<h3>Starting and Exiting<a class=headerlink href=#starting-and-exiting title="Link to this heading">¶</a></h3>
+<p>Once fish has been installed, open a terminal. If fish is not the default shell:</p>
+<ul>
+<li><p>Type <strong class=command>fish</strong> to start a shell:</p>
+<div class="highlight-fish-docs-samples notranslate"><div class=highlight><pre><span></span><span class=gp>&gt; </span><span class=nf>fish</span>
+<button><span>COPY</span></button></pre></div>
+</div>
+</li>
+<li><p>Type <strong class=command>exit</strong> to end the session:</p>
+<div class="highlight-fish-docs-samples notranslate"><div class=highlight><pre><span></span><span class=gp>&gt; </span><span class=nf>exit</span>
+<button><span>COPY</span></button></pre></div>
+</div>
+</li>
+</ul>
+</section>
+<section id=default-shell>
+<span id=id2></span><h3>Default Shell<a class=headerlink href=#default-shell title="Link to this heading">¶</a></h3>
+<p>There are multiple ways to switch to fish (or any other shell) as your default.</p>
+<p>The simplest method is to set your terminal emulator (eg GNOME Terminal, Apple’s Terminal.app, or Konsole) to start fish directly. See its configuration and set the program to start to <code class="docutils literal notranslate"><span class=pre>/usr/local/bin/fish</span></code> (if that’s where fish is installed - substitute another location as appropriate).</p>
+<p>Alternatively, you can set fish as your login shell so that it will be started by all terminal logins, including SSH.</p>
+<div class="admonition warning">
+<p class=admonition-title>Warning</p>
+<p>Setting fish as your login shell may cause issues, such as an incorrect <span class=target id=index-0></span><a class="reference internal" href=https://fishshell.com/docs/current/language.html#envvar-PATH><code class="xref std std-envvar docutils literal notranslate"><span class=pre>PATH</span></code></a>. Some operating systems, including a number of Linux distributions, require the login shell to be Bourne-compatible and to read configuration from <code class="docutils literal notranslate"><span class=pre>/etc/profile</span></code>. fish may not be suitable as a login shell on these systems.</p>
+</div>
+<p>To change your login shell to fish:</p>
+<ol class=arabic>
+<li><p>Add the shell to <code class="docutils literal notranslate"><span class=pre>/etc/shells</span></code> with:</p>
+<div class="highlight-fish-docs-samples notranslate"><div class=highlight><pre><span></span><span class=gp>&gt; </span><span class=nf>echo </span><span class=no>/usr/local/bin/fish </span><span class=p>|</span><span class=w> </span><span class=nf>sudo </span><span class=no>tee -a /etc/shells</span>
+<button><span>COPY</span></button></pre></div>
+</div>
+</li>
+<li><p>Change your default shell with:</p>
+<div class="highlight-fish-docs-samples notranslate"><div class=highlight><pre><span></span><span class=gp>&gt; </span><span class=nf>chsh </span><span class=no>-s /usr/local/bin/fish</span>
+<button><span>COPY</span></button></pre></div>
+</div>
+</li>
+</ol>
+<p>Again, substitute the path to fish for <code class="docutils literal notranslate"><span class=pre>/usr/local/bin/fish</span></code> - see <code class="docutils literal notranslate"><span class=pre>command</span> <span class=pre>-s</span> <span class=pre>fish</span></code> inside fish. To change it back to another shell, just substitute <code class="docutils literal notranslate"><span class=pre>/usr/local/bin/fish</span></code> with <code class="docutils literal notranslate"><span class=pre>/bin/bash</span></code>, <code class="docutils literal notranslate"><span class=pre>/bin/tcsh</span></code> or <code class="docutils literal notranslate"><span class=pre>/bin/zsh</span></code> as appropriate in the steps above.</p>
+</section>
+<section id=uninstalling>
+<h3>Uninstalling<a class=headerlink href=#uninstalling title="Link to this heading">¶</a></h3>
+<p>For uninstalling fish: see <a class="reference internal" href=https://fishshell.com/docs/current/faq.html#faq-uninstalling><span class="std std-ref">FAQ: Uninstalling fish</span></a>.</p>
+</section>
+<section id=shebang-line>
+<h3>Shebang Line<a class=headerlink href=#shebang-line title="Link to this heading">¶</a></h3>
+<p>Because shell scripts are written in many different languages, they need to carry information about which interpreter should be used to execute them. For this, they are expected to have a first line, the shebang line, which names the interpreter executable.</p>
+<p>A script written in <strong class=command>bash</strong> would need a first line like this:</p>
+<div class="highlight-fish-docs-samples notranslate"><div class=highlight><pre><span></span><span class=c>#!/bin/bash</span>
+<button><span>COPY</span></button></pre></div>
+</div>
+<p>When the shell tells the kernel to execute the file, it will use the interpreter <code class="docutils literal notranslate"><span class=pre>/bin/bash</span></code>.</p>
+<p>For a script written in another language, just replace <code class="docutils literal notranslate"><span class=pre>/bin/bash</span></code> with the interpreter for that language. For example: <code class="docutils literal notranslate"><span class=pre>/usr/bin/python</span></code> for a python script, or <code class="docutils literal notranslate"><span class=pre>/usr/local/bin/fish</span></code> for a fish script, if that is where you have them installed.</p>
+<p>If you want to share your script with others, you might want to use <strong class=command>env</strong> to allow for the interpreter to be installed in other locations. For example:</p>
+<div class="highlight-fish-docs-samples notranslate"><div class=highlight><pre><span></span><span class=c>#!/usr/bin/env fish</span>
+<span class=nf>echo </span><span class=no>Hello from fish </span><span class=o>$version</span>
+<button><span>COPY</span></button></pre></div>
+</div>
+<p>This will call <code class="docutils literal notranslate"><span class=pre>env</span></code>, which then goes through <span class=target id=index-1></span><a class="reference internal" href=https://fishshell.com/docs/current/language.html#envvar-PATH><code class="xref std std-envvar docutils literal notranslate"><span class=pre>PATH</span></code></a> to find a program called “fish”. This makes it work, whether fish is installed in (for example) <code class="docutils literal notranslate"><span class=pre>/usr/local/bin/fish</span></code>, <code class="docutils literal notranslate"><span class=pre>/usr/bin/fish</span></code>, or <code class="docutils literal notranslate"><span class=pre>~/.local/bin/fish</span></code>, as long as that directory is in <span class=target id=index-2></span><a class="reference internal" href=https://fishshell.com/docs/current/language.html#envvar-PATH><code class="xref std std-envvar docutils literal notranslate"><span class=pre>PATH</span></code></a>.</p>
+<p>The shebang line is only used when scripts are executed without specifying the interpreter. For functions inside fish or when executing a script with <code class="docutils literal notranslate"><span class=pre>fish</span> <span class=pre>/path/to/script</span></code>, a shebang is not required (but it doesn’t hurt!).</p>
+<p>When executing files without an interpreter, fish, like other shells, tries your system shell, typically <code class="docutils literal notranslate"><span class=pre>/bin/sh</span></code>. This is needed because some scripts are shipped without a shebang line.</p>
+</section>
+</section>
+<section id=configuration>
+<h2>Configuration<a class=headerlink href=#configuration title="Link to this heading">¶</a></h2>
+<p>To store configuration write it to a file called <code class="docutils literal notranslate"><span class=pre>~/.config/fish/config.fish</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class=pre>.fish</span></code> scripts in <code class="docutils literal notranslate"><span class=pre>~/.config/fish/conf.d/</span></code> are also automatically executed before <code class="docutils literal notranslate"><span class=pre>config.fish</span></code>.</p>
+<p>These files are read on the startup of every shell, whether interactive and/or if they’re login shells. Use <code class="docutils literal notranslate"><span class=pre>status</span> <span class=pre>--is-interactive</span></code> and <code class="docutils literal notranslate"><span class=pre>status</span> <span class=pre>--is-login</span></code> to do things only in interactive/login shells, respectively.</p>
+<p>This is the short version; for a full explanation, like for sysadmins or integration for developers of other software, see <a class="reference internal" href=https://fishshell.com/docs/current/language.html#configuration><span class="std std-ref">Configuration files</span></a>.</p>
+<p>If you want to see what you changed over fish’s defaults, see <a class="reference internal" href=https://fishshell.com/docs/current/cmds/fish_delta.html><span class=doc>fish_delta</span></a>.</p>
+<section id=examples>
+<h3>Examples:<a class=headerlink href=#examples title="Link to this heading">¶</a></h3>
+<p>To add <code class="docutils literal notranslate"><span class=pre>~/linux/bin</span></code> to PATH variable when using a login shell, add this to <code class="docutils literal notranslate"><span class=pre>~/.config/fish/config.fish</span></code> file:</p>
+<div class="highlight-fish-docs-samples notranslate"><div class=highlight><pre><span></span><span class=nf>if</span><span class=w> </span><span class=nf>status </span><span class=no>--is-login</span>
+<span class=w>    </span><span class=nf>set </span><span class=no>-gx PATH </span><span class=o>$PATH</span><span class=w> </span><span class=o>~</span><span class=no>/linux/bin</span>
+<span class=nf>end</span>
+<button><span>COPY</span></button></pre></div>
+</div>
+<p>This is just an example; using <a class="reference internal" href=https://fishshell.com/docs/current/cmds/fish_add_path.html><span class=doc>fish_add_path</span></a> e.g. <code class="docutils literal notranslate"><span class=pre>fish_add_path</span> <span class=pre>~/linux/bin</span></code> which only adds the path if it isn’t included yet is easier.</p>
+<p>To run commands on exit, use an <a class="reference internal" href=https://fishshell.com/docs/current/language.html#event><span class="std std-ref">event handler</span></a> that is triggered by the exit of the shell:</p>
+<div class="highlight-fish-docs-samples notranslate"><div class=highlight><pre><span></span><span class=nf>function</span><span class=w> </span><span class=no>on_exit --on-event fish_exit</span>
+<span class=w>    </span><span class=nf>echo </span><span class=no>fish is now exiting</span>
+<span class=nf>end</span>
+<button><span>COPY</span></button></pre></div>
+</div>
+</section>
+</section>
+<section id=resources>
+<span id=more-help></span><h2>Resources<a class=headerlink href=#resources title="Link to this heading">¶</a></h2>
+<ul class=simple>
+<li><p>The <a class="reference external" href=https://github.com/fish-shell/fish-shell/>GitHub page</a></p></li>
+<li><p>The official <a class="reference external" href=https://gitter.im/fish-shell/fish-shell>Gitter channel</a></p></li>
+<li><p>The official mailing list at <a class="reference external" href=https://lists.sourceforge.net/lists/listinfo/fish-users>fish-users@lists.sourceforge.net</a></p></li>
+</ul>
+<p>If you have an improvement for fish, you can submit it via the GitHub page.</p>
+</section>
+<section id=other-help-pages>
+<span id=other-pages></span><h2>Other help pages<a class=headerlink href=#other-help-pages title="Link to this heading">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul class=current>
+<li class="toctree-l1 current"><a class="current reference internal" href=#>Introduction</a></li>
+<li class=toctree-l1><a class="reference internal" href=https://fishshell.com/docs/current/faq.html>Frequently asked questions</a></li>
+<li class=toctree-l1><a class="reference internal" href=https://fishshell.com/docs/current/interactive.html>Interactive use</a></li>
+<li class=toctree-l1><a class="reference internal" href=https://fishshell.com/docs/current/language.html>The fish language</a></li>
+<li class=toctree-l1><a class="reference internal" href=https://fishshell.com/docs/current/commands.html>Commands</a></li>
+<li class=toctree-l1><a class="reference internal" href=https://fishshell.com/docs/current/fish_for_bash_users.html>Fish for bash users</a></li>
+<li class=toctree-l1><a class="reference internal" href=https://fishshell.com/docs/current/tutorial.html>Tutorial</a></li>
+<li class=toctree-l1><a class="reference internal" href=https://fishshell.com/docs/current/completions.html>Writing your own completions</a></li>
+<li class=toctree-l1><a class="reference internal" href=https://fishshell.com/docs/current/prompt.html>Writing your own prompt</a></li>
+<li class=toctree-l1><a class="reference internal" href=https://fishshell.com/docs/current/design.html>Design</a></li>
+<li class=toctree-l1><a class="reference internal" href=https://fishshell.com/docs/current/relnotes.html>Release notes</a></li>
+<li class=toctree-l1><a class="reference internal" href=https://fishshell.com/docs/current/contributing.html>Contributing To Fish</a></li>
+<li class=toctree-l1><a class="reference internal" href=https://fishshell.com/docs/current/license.html>License</a></li>
+</ul>
+</div>
+</section>
+</section>
+ <div class=clearer></div>
+ </div>
+ </div>
+ </div> 
+ <div class=clearer></div>
+ </div> 
+ <div class=related role=navigation aria-label=Related>
+ <h3 class=sf-hidden>Navigation</h3>
+ <ul>
+ <li><img src='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256"><rect fill-opacity="0"/></svg>' alt style="width:80px;height:80px;vertical-align:middle;margin-top:-1px;background-blend-mode:normal!important;background-clip:content-box!important;background-position:50% 50%!important;background-color:rgba(0,0,0,0)!important;background-image:var(--sf-img-0)!important;background-size:100% 100%!important;background-origin:content-box!important;background-repeat:no-repeat!important"></li>
+ <li><a href=https://fishshell.com/>fish-shell</a> »</li>
+ 
+ <a href=#>fish-shell 4.0.2 documentation</a> »
+ 
+ <li class="nav-item nav-item-this"><a href=https://fishshell.com/docs/current/index.html>Introduction</a></li>
+ <li class=right>
+ 
+ <div class=inline-search role=search>
+ <form class=inline-search action=search.html>
+ <input placeholder="Quick search" type=text name=q value>
+ <input type=submit value=Go>
+ 
+ 
+ </form>
+ </div>
+ </li>
+ 
+ <div id=old-docs-notice style=display:none>
+ This documents an old version of fish.
+ 
+ </div>
+ </ul>
+ </div> 
+ <div class=footer>
+ © Copyright 2024, fish-shell developers.
+ <br>
+ <a href=https://github.com/fish-shell/fish-shell/issues>Found a bug</a>?
+ <br>
+ Created using <a href=https://www.sphinx-doc.org/>Sphinx</a> 8.2.3.
+ </div>
+</div>
+ 
