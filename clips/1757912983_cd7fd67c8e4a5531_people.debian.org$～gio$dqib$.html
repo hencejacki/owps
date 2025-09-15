@@ -1,0 +1,67 @@
+<html><!--
+ Page saved with SingleFile 
+ url: https://people.debian.org/~gio/dqib/ 
+ saved date: Mon Sep 15 2025 13:09:41 GMT+0800 (中国标准时间)
+--><meta charset=utf-8>
+<title>Debian Quick Image Baker pre-baked images</title>
+<meta name=referrer content=no-referrer><link rel=canonical href=https://people.debian.org/~gio/dqib/><meta http-equiv=content-security-policy content="default-src 'none'; font-src 'self' data:; img-src 'self' data:; style-src 'unsafe-inline'; media-src 'self' data:; script-src 'unsafe-inline' data:; object-src 'self' data:; frame-src 'self' data:;"></head>
+ <body>
+ <h1>Debian Quick Image Baker pre-baked images</h1>
+ <p>
+ Here you can download pre-baked images created by DQIB. Each
+ downloadable file is a ZIP archive containing the root
+ filesystem, kernel, initrd and a readme text file (which
+ includes launch command and auth info). Have fun and report bugs
+ to <a href=https://gitlab.com/giomasce/dqib>the GitLab
+ project</a>.
+ </p>
+ <p>
+ For more information see
+ DQIB's <a href=https://gitlab.com/giomasce/dqib/blob/master/README.md>README</a>
+ or
+ this <a href=https://www.giovannimascellani.eu/dqib-debian-quick-image-baker.html>blog
+ post</a>.
+ </p>
+ <p>
+ <b>Any help on how to make work the architectures that currently
+ don't work is greatly welcome!</b>
+ </p>
+ <h2>Release architectures</h2>
+ <ul>
+ <li><a href="https://gitlab.com/api/v4/projects/giomasce%2Fdqib/jobs/artifacts/master/download?job=convert_i386-pc">Images for i386-pc</a></li>
+ <li><a href="https://gitlab.com/api/v4/projects/giomasce%2Fdqib/jobs/artifacts/master/download?job=convert_amd64-pc">Images for amd64-pc</a></li>
+ <li><a href="https://gitlab.com/api/v4/projects/giomasce%2Fdqib/jobs/artifacts/master/download?job=convert_mips64el-malta">Images for mips64el-malta</a></li>
+ <li><a href="https://gitlab.com/api/v4/projects/giomasce%2Fdqib/jobs/artifacts/master/download?job=convert_armel-raspi2">Images for armel-raspi2</a> (currently not working; I have no idea about how to make it work)</li>
+ <li><a href="https://gitlab.com/api/v4/projects/giomasce%2Fdqib/jobs/artifacts/master/download?job=convert_armhf-virt">Images for armhf-virt</a></li>
+ <li><a href="https://gitlab.com/api/v4/projects/giomasce%2Fdqib/jobs/artifacts/master/download?job=convert_arm64-virt">Images for arm64-virt</a></li>
+ <li><a href="https://gitlab.com/api/v4/projects/giomasce%2Fdqib/jobs/artifacts/master/download?job=convert_ppc64el-pseries">Images for ppc64el-pseries</a></li>
+ <li><a href="https://gitlab.com/api/v4/projects/giomasce%2Fdqib/jobs/artifacts/master/download?job=convert_s390x-virt">Images for s390x-virt</a></li>
+ <li><a href="https://gitlab.com/api/v4/projects/giomasce%2Fdqib/jobs/artifacts/master/download?job=convert_riscv64-virt">Images for riscv64-virt</a></li>
+ </ul>
+ <h2>Ports architectures</h2>
+ <ul>
+ <li><a href="https://gitlab.com/api/v4/projects/giomasce%2Fdqib/jobs/artifacts/master/download?job=convert_alpha-clipper">Images for alpha-clipper</a> (currently not working; I have no idea about how to make it work)</li>
+ <li><a href="https://gitlab.com/api/v4/projects/giomasce%2Fdqib/jobs/artifacts/master/download?job=convert_hppa-hppa">Images for hppa-hppa</a></li>
+ <li><a href="https://gitlab.com/api/v4/projects/giomasce%2Fdqib/jobs/artifacts/master/download?job=convert_m68k-q800">Images for m68k-q800</a> (requires rather recent versions of QEMU; version 5.1 seems fine)</li>
+ <li><a href="https://gitlab.com/api/v4/projects/giomasce%2Fdqib/jobs/artifacts/master/download?job=convert_powerpc-g3beige">Images for powerpc-g3beige</a></li>
+ <li><a href="https://gitlab.com/api/v4/projects/giomasce%2Fdqib/jobs/artifacts/master/download?job=convert_ppc64-pseries">Images for ppc64-pseries</a></li>
+ <li><a href="https://gitlab.com/api/v4/projects/giomasce%2Fdqib/jobs/artifacts/master/download?job=convert_sh4-r2d">Images for sh4-r2d</a> (currently not working; I have no idea about how to make it work, but <a href=https://lists.debian.org/msgid-search/CAP145pjk471P9pUzhf-rpZiQvjd499i-VpL8iRECDWkSKM_cyA@mail.gmail.com>this thread might be a starting point</a>)</li>
+ <li><a href="https://gitlab.com/api/v4/projects/giomasce%2Fdqib/jobs/artifacts/master/download?job=convert_sparc64-sun4u">Images for sparc64-sun4u</a></li>
+ </ul>
+ <h2>Unsupported ports</h2>
+ <ul>
+ <li>arc and ia64 are not supported by QEMU, so there is no way to have it working</li>
+ <li>No work has been done for loong64 yet, but in theory it should work</li>
+ <li>x32 is not an actual architecture, but a different data model and ABI on top of amd64 CPUs; therefore it does not really fit DQIB's model, although at some point we could provide an x32 chroot</li>
+ <li>non-Linux ports (of which hurd-i386 is currently the only survivor) are not supported because I do not know how to bootstrap them from a Linux machine</li>
+ </ul>
+ <h2>Other images</h2>
+ <p>
+ Stuff in this section is not related to DQIB, but if you're
+ looking for Debian images for less common platforms you might
+ find something interesting here.
+ </p>
+ <ul>
+ <li><a href=https://cdimage.debian.org/cdimage/ports/latest/hurd-i386/debian-hurd.img.tar.xz>Images for hurd-i386</a> (maintained by Debian; run with: <tt>qemu-system-i386 -machine pc -cpu coreduo -m 1G -drive file=debian-hurd-*.img</tt>; login as <tt>root</tt>, without password)</li>
+ </ul>
+ 
